@@ -1,5 +1,5 @@
 class Restricao {
-    costructor(corpoA,corpoB){
+    constructor(corpoA,corpoB){
         var options = {
             bodyA: corpoA,
             bodyB: corpoB,
@@ -7,7 +7,7 @@ class Restricao {
             length: 7
         }
         this.restricao = Constraint.create(options)
-        world.add(wolrd,this.restricao)
+        World.add(world,this.restricao)
         this.bodyA = corpoA
         this.bodyB = corpoB
     }
